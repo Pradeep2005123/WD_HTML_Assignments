@@ -7,27 +7,24 @@
 
 </head>
 <body>
-<div></div>
-<style>
-    @keyframes moveball{
-        0%{left:10px; top:10px}
-        25%{top:1100px;top:10px}
-        50%{left:1100px; top:500px}
-        75%{left:10px; top:500px}
-        100%{left:10px; top:10px}
-    }
-div{
-width: 100px; 
-height:  100px;
-border: 1px solid blue;
-border-radius :50%;
-position :relative;
-background-color : red;
-animation-name : moveball;
-animation-duration : 5s;
-animation-iteration-count :infinte;
 
+<style>
+    @keyframes changebackground{
+        25%{background-image: url("https://th.bing.com/th/id/R.1a62ea1689f43673c2f8784487e7d52e?rik=STlw1FYFPklIeQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fa%2fe%2f0%2f751987-wild-animals-wallpapers-2545x1692-computer.jpg&ehk=7CCBVoIbIMAYhbRwPBBL2RRacenLZjwiQN5WpIpu3qI%3d&risl=&pid=ImgRaw&r=0") ;}
+        50%{background-image: url("https://wallup.net/wp-content/uploads/2016/01/202352-animals-macaws-nature-closeup-birds-parrot.jpg") ;}
+        75%{background-image:  url("https://th.bing.com/th/id/R.4f6acd70c4351cb53d82f6575e75e48a?rik=zkXfR0Yye%2bRpiQ&riu=http%3a%2f%2fvuing.com%2fwp-content%2fuploads%2f2016%2f05%2fcute-adorable-photos-kids-animals-pets-15.jpg&ehk=RCkq2ZbX1%2fQCcdI4ZunYy3pNH7g%2f3G1%2fWtCtkaAII%2fo%3d&risl=&pid=ImgRaw&r=0");}
+        100%{background-image: url("https://thumbor.bigedition.com/little-girl-in-pink-clothes-hugging-a-rabbit/r1vqG97azdAOqNBH7dtJwacFek4=/69x0:1184x836/800x0/filters:quality(80)/granite-web-prod/67/dd/67dd63bc41e246a1a59aec1e7bd1187d.jpeg");}
+    }
+body{
+    
+background-repeat:no-repeat;
+animation-name:changebackground;
+animation-duration:10s;
+background-size:1400px 800px;
 }
+
+
+
     
     </style>
 </body>
