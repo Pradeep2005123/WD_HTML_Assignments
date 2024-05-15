@@ -11,7 +11,7 @@ body {
     font-family: sans-serif;
     line-height: 2.5;
     min-height: 100vh;
-    background: #f3f3f3;
+    background:red;
     flex-direction: column;
     margin: 0;
 }
