@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes changeing{
+            0%{background-image: url("background1.jpg");}
+            20%{background-image: url("background2.jpeg");}
+            40%{background-image: url("background4.jpeg");}
+            60%{background-image: url("background5.jpeg");}
+            80%{background-image: url("background3.jpeg");}
+            1000%{background-image: url("background2.jpeg");}
+            
+        }
+        body{
+            background-image:url("background1.jpg");
+            background-repeat: no-repeat;
+            background-size: 1600px 800px;
+            animation-name: changeing;
+            animation-duration: 15s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
