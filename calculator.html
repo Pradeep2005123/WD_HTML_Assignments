@@ -1,0 +1,110 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>calci by me</title>
+<style>
+.calculator {
+width: 250px;
+margin: 0 auto;
+padding: 50px;
+border: 1px solid #ccc;
+border-radius: 10px;
+background: rgba(104, 173, 212, 0.736)
+}
+body {
+background: rgb(238, 174, 202);
+background: radial-gradient(circle, rgb(238, 174, 213) 0%,
+rgb(148, 188,233) 100%);
+}
+#display {
+width: 90%;
+margin-bottom: 10px;
+padding: 10px;
+font-size: 20px;
+background: rgb(2, 0, 36);
+background: linear-gradient(to right, green, #c7b7b9);
+}
+.buttons {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+}
+button {
+    padding: 10px;
+font-size: 18px;
+border: 2 px solid black;
+border-radius: 5px;
+cursor: pointer;
+background: rgb(2, 0, 36);
+background: radial-gradient(circle, rgb(238, 190, 174) 0%,
+rgba(148, 187, 233, 1) 100%);
+}
+
+button:hover {
+background-color: #ccc;
+}
+</style>
+</head>
+</body>
+<div class="calculator">
+<input type="text" id="display" readonly_placeholder="0">
+<div class="buttons">
+  <button onclick="clearDisplay()">C</button>
+  <button onclick="appendToDisplay('7')">7</button>
+  <button onclick="appendToDisplay('8')">8</button>
+  <button onclick="appendToDisplay('9')">9</button> 
+  <button onclick="appendToDisplay('/')">/</button>
+  <button onclick="appendToDisplay('4')">4</button>
+  <button onclick="appendsoDisplay('5')">5</button>
+  <button onclick="appendToDisplay('6')">6</button>
+  <button onclick="appendToDisplay('*')">X</button>
+  <button onclick="appendToDisplay('1')">1</button>
+  <button onclick="appendToDisplay('2')">2</button>
+  <button onclick="appendToDisplay('3')">3</button>
+  <button onclick="appendToDisplay('-')">-</button>
+  <button onclick="appendToDisplay('0')"> 0</button>
+  <button onclick="appendToDisplay('.')"> .</button>
+  <button onclick="calculate()"> =</button>
+  <button onclick="appendToDisplay('+')">+</button>
+  </div>
+  </div>
+  <script>
+    function appendToDisplay(value) {
+    document.getElementById("display").value += value;
+    }
+    function clearDisplay() {
+    document. getElementById("display").value = "";
+    
+    }
+    function calculate(){
+    let exp=document.getElementById('display').value;
+    let result;
+    try{
+    result=eval(exp);
+    }catch(error){
+    result="Error";
+    }
+    document.getElementById("display").value=result;
+    }
+    function clearDisplay() {
+document.getElementById("display").value
+    }
+function calculate(){
+let exp=document.getElementById('display').value;
+let result;
+try{
+result=eval(exp);
+}catch(error){
+result="Error";
+
+}
+document.getElementById("display").value=result;
+}
+</script>
+</body>
+</html>
+
+   
